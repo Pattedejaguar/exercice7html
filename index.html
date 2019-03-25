@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-     <title>ex7</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <form class="" action="index.html" method="post">
-  <fieldset id="tableau1">
-    <legend id= "tableau1">votre identité</legend>
+<head>
+  <meta charset="utf-8">
+  <title>ex7</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- action mettre afficher une page après validation  -->
+  <form  action="index2.html" method="get">
+    <!-- méthode post ou méthode get  -->
+
+
+    <fieldset id="tableau1">
+      <legend id= "tableau1">votre identité</legend>
       <ol>
         <li>
           <label> Nom :</label>
-            <input placeholder="Nom" type="text" name="votre nom" value="">
-         </li>
+          <input placeholder="Nom" type="text" name="votre nom" value="">
+        </li>
         <li>
           <label>Prénom :</label>
-            <input placeholder="Prénom" type="text" name="votre nom" value="">
-         </li>
+          <input placeholder="Prénom" type="text" name="votre nom" value="">
+        </li>
         <li>
           <label>Adresse mail</label>
-            <input placeholder="Adresse mail" type="text" name="votre nom" value="">
-         </li>
+          <input placeholder="Adresse mail" type="text" name="votre nom" value="">
+        </li>
       </ol>
-  </fieldset>
+    </fieldset>
 
-  <fieldset id="tableau2">
-    <legend id="tableau2">Adresse de livraison</legend>
+    <fieldset id="tableau2">
+      <legend id="tableau2">Adresse de livraison</legend>
       <ol>
         <li>
           <label>Adresse :</label>
-           <textarea name="name" rows="4" cols="15"></textarea>
-          </li>
+          <textarea name="name" rows="4" cols="15"></textarea>
+        </li>
         <li>
           <label for="">Code Postal :</label>
-           <input placeholder="Code postal" type="text" name="votre nom" value="">
-          </li>
+          <input placeholder="Code postal" type="text" name="votre nom" value="">
+        </li>
         <li>
           <label>Ville :</label>
-           <input placeholder="Ville" type="text" name="votre nom" value="">
-         </li>
+          <input placeholder="Ville" type="text" name="votre nom" value="">
+        </li>
       </ol>
-  </fieldset>
+    </fieldset>
 
-  <fieldset id="tableau3">
-    <legend id="tableau3">Information de règlement</legend>
+    <fieldset id="tableau3">
+      <legend id="tableau3">Information de règlement</legend>
       <ol>
         <li>
           <label>Type de carte bancaire</label>
-            <div>
-              <input type="radio" id="huey" name="carte">
-                <label> Visa</label>  </div>
-            <div>
-              <input type="radio" id="huey" name="carte">
-                <label> Mastercard </label> </div>
-            </li>
+          <div>
+            <input type="radio" id="huey" name="carte">
+            <label> Visa</label>
+          </div>
+          <div>
+            <input type="radio" id="huey" name="carte">
+            <label> Mastercard </label>
+          </div>
+        </li>
         <li>
           <label> Numéro de carte :</label>
           <input placeholder="Numéro de carte" type="text" name="votre nom" value="">
-         </li>
-       <li>
+        </li>
+        <li>
           <label> Code de sécurité :</label>
-           <input placeholder="Code de sécurité" type="text" name="votre nom" value="">
-         </li>
+          <input placeholder="Code de sécurité" type="text" maxlength="3" name="votre nom" value="">
+        </li>
         <li>
           <label> Nom du titulaire :</label>
-           <input placeholder="Nom de titulaire" type="text" name="votre nom" value="">
-         </li>
-     </ol>
-  </fieldset>
-</form>
-  </body>
+          <input placeholder="Nom de titulaire" type="text" name="votre nom" value="">
+        </li>
+      </ol>
+    </fieldset>
+    <input type="submit" value="J'achète"/>
+  </form>
+</body>
 </html>
